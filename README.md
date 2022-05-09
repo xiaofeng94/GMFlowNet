@@ -55,7 +55,7 @@ Place all datasets in your preferred directory and symbolic link it to `./datase
 
 ## Evaluation
 Download the pretraind model described in [Demo](https://github.com/xiaofeng94/GMFlowNet/blob/master/README.md#demos). 
-You may evaluate a trained model using `evaluate.py`. To get the best result,
+You may evaluate a pretrained model using `evaluate.py`. To get the best result,
 
 On Sintel, evaluate the `gmflownet_mix` model as,
 ```Shell
