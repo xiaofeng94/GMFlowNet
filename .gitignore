@@ -1,6 +1,7 @@
 *.pyc
 *.egg-info
 dist
+datasets
 datasets/
 pretrained_models/
 build/
