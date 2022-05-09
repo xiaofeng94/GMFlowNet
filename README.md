@@ -1,6 +1,6 @@
 # GMFlowNet
 
-This repository contains the source code for our paper:
+This repository contains the official implementation for the paper:
 
 [Global Matching with Overlapping Attention for Optical Flow Estimation](https://arxiv.org/abs/2203.11335)<br/>
 CVPR 2022 <br/>
@@ -59,11 +59,11 @@ You may evaluate a trained model using `evaluate.py`. To get the best result,
 
 On Sintel, evaluate the `gmflownet_mix` model as,
 ```Shell
-python evaluate.py --model gmflownet --use_mix_attn --ckpt=models/gmflownet_mix-things.pth --dataset=sintel
+python evaluate.py --model gmflownet --use_mix_attn --ckpt=pretrained_models/gmflownet_mix-things.pth --dataset=sintel
 ```
 On KITTI, evaluate the `gmflownet` model as,
 ```Shell
-python evaluate.py --model gmflownet --ckpt=models/gmflownet-things.pth --dataset=kitti
+python evaluate.py --model gmflownet --ckpt=pretrained_models/gmflownet-things.pth --dataset=kitti
 ```
 Note: `gmflownet_mix` replaces half of heads (4 out of 8 heads) in each POLA attention of `gmflownet` with heads of [axial attentions](https://arxiv.org/abs/2003.07853) and achieves better results on Sintel.
 
