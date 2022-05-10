@@ -71,13 +71,13 @@ Note: `gmflownet_mix` replaces half of heads (4 out of 8 heads) in each POLA att
 ## Training
 We used the following training schedules in our paper (2 GPUs). 
 
-- Train `gmflownet_mix` as,
-```Shell
-./train_gmflownet_mix.sh
-```
 - Train `gmflownet` as,
 ```Shell
 ./train_gmflownet.sh
+```
+- Train `gmflownet_mix` as,
+```Shell
+./train_gmflownet_mix.sh
 ```
 
 Training logs will be written to the `./runs` which can be visualized using tensorboard as,
